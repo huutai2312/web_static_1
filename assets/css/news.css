@@ -1,0 +1,140 @@
+.main,
+.footer,
+.header {
+    overflow: hidden;
+}
+
+.list-news-wrapper {
+    justify-content: center;
+}
+
+.list-news {
+    font-family: 'Nunito', sans-serif;
+}
+
+.list-news__img {
+    width: 100%;
+    max-width: 370px;
+    border-radius: 20px;
+}
+
+.list-news__title {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.list-news__tag {
+    display: flex;
+    margin: 30px auto;
+    position: relative;
+}
+
+.list-news__tag::before {
+    content: "";
+    border-bottom: 1px solid #000;
+    position: absolute;
+    left: -50%;
+    width: 50%;
+    top: 50%;
+}
+
+.list-news__tag::after {
+    content: "";
+    border-bottom: 1px solid #000;
+    position: absolute;
+    right: -50%;
+    width: 50%;
+    top: 50%;
+}
+
+.region-btn {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #27B374;
+    height: 32px;
+    min-width: 120px;
+    max-width: 130px;
+    text-align: center;
+    line-height: 32px;
+    margin: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.region-btn:hover,
+.region-btn--active {
+    background-color: #F8931E;
+    position: relative;
+}
+
+.region-btn:hover::before,
+.region-btn--active::before {
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    position: absolute;
+    border-top: 7px solid #F8931E;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.list-news__dsc {
+    padding: 0 10px;
+    border-left: 5px solid #01A99F;
+    margin: 20px 0;
+}
+
+.list-news__dsc-title {
+    font-size: 1.6rem;
+    color: #E32B2C;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.list-news__dsc-text {
+    font-size: 1.4rem;
+}
+
+.list-news__dsc-text i {
+    color: #000;
+    margin-right: 5px;
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+
+.map {
+    justify-content: center;
+    border: 1px solid #ddd;
+    margin: 20px 20px;
+}
+
+.map__title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 20px;
+   
+}
+
+.map__title + div iframe {
+    margin-bottom: 20px;
+}
+
+.slideShow__item-img {
+    width: 100%;
+}
+
+.slideShow__item-link {
+    padding: 14px;
+}
+
+@media (max-width: 1024px) {
+    .slideShow__item-img {
+        height: 300px;
+    }
+}

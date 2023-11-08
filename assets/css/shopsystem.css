@@ -1,0 +1,138 @@
+.main,
+.footer,
+.header {
+    overflow: hidden;
+}
+
+.list-shop-wrapper {
+    justify-content: center;
+}
+
+.list-shop {
+    font-family: 'Nunito', sans-serif;
+}
+
+.list-shop__img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.list-shop__title {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.list-shop__tag {
+    display: flex;
+    margin: 30px auto;
+}
+
+.region-btn {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #27B374;
+    height: 32px;
+    min-width: 120px;
+    max-width: 130px;
+    text-align: center;
+    line-height: 32px;
+    margin: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.region-btn:hover,
+.region-btn--active {
+    background-color: #F8931E;
+    position: relative;
+}
+
+.region-btn:hover::before,
+.region-btn--active::before {
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    position: absolute;
+    border-top: 7px solid #F8931E;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.list-shop__dsc {
+    padding: 0 10px;
+    border-left: 5px solid #01A99F;
+    margin: 20px 0;
+}
+
+.list-shop__dsc-title {
+    font-size: 1.6rem;
+    color: #E32B2C;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.list-shop__dsc-text {
+    font-size: 1.4rem;
+}
+
+.list-shop__dsc-text i {
+    color: #000;
+    margin-right: 5px;
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+
+.map {
+    justify-content: center;
+    border: 1px solid #ddd;
+    margin: 20px 20px;
+}
+
+.map__title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 20px;
+   
+}
+
+.map__title + div iframe {
+    margin-bottom: 20px;
+}
+
+.geolocation-header {
+    padding: 15px;
+    background-color: rgb(96, 96, 175);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    max-width: 180px;
+    margin: 20px auto;
+}
+
+@media (max-width: 1024px) {
+    .map__title + div iframe {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .map-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

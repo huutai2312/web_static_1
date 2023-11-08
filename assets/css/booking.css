@@ -1,0 +1,57 @@
+.booking {
+    background: url(../img/bg_booking.jpg) top center / cover no-repeat;
+}
+
+.booking__input {
+    height: 50px;
+    line-height: 50px;
+    color: #666;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 0 15px;
+    width: 100%;
+    outline: none;
+}
+
+textarea.booking__input {
+    min-height: 120px;
+    margin: 40px 0;
+}
+
+.booking__item {
+    margin-bottom: 40px;;
+}
+
+.row__form {
+    justify-content: center;
+}
+
+.booking-btn {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    background-color: #EE1C25;
+    border: none;
+    padding: 10px 45px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+.booking-hotline-wrap {
+    padding-bottom: 40px;
+}
+
+.booking-hotline-wrap h4{
+    font-size: 2.5rem;
+    font-family: "UTM Helve";
+    font-weight: lighter;
+    text-align: center;
+}
+
+@media (max-width: 740px) {
+    .mobile-fix {
+        margin-top: 40px;;
+    }
+}

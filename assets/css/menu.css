@@ -1,0 +1,155 @@
+.main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.outstanding-food--menu {
+    background: url(../img/bg_menu.jpg);
+    position: relative;
+    z-index: 0;
+}
+
+.pagination {
+    margin: 40px 0;
+}
+
+.pagination__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__list-item {
+    width: 34px;
+    height: 34px;
+    background-color: #27B347;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    text-align: center;
+    line-height: 34px;
+    font-weight: 500; 
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pagination__list-item--active {
+    background-color: #F8931E;
+}
+
+.outstanding-food--menu::before {
+    content: "";
+    background: url(../img/fish.png);
+    display: block;
+    position: absolute;
+    min-width: 225px;
+    min-height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 3%;
+    z-index: -1;
+}
+
+.outstanding-food--menu::after {
+    content: "";
+    background: url(../img/fish.png);
+    display: block;
+    position: absolute;
+    min-width: 225px;
+    min-height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 3%;
+    z-index: -1;
+}
+
+.main-nav__list-item {
+    min-width: 10%;
+    font-family: "Roboto";
+    background-color: #80C41C;
+    padding: 10px 3px;
+    color: #fff;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-nav__list-item::before {
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    border-top: 7px solid orange;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    display: none;
+}
+
+.main-nav__list-item:hover {
+    background-color: orange;
+}
+
+.main-nav__list-item:hover::before {
+    display: block;
+}
+
+.list-product {
+    margin-top: 40px;
+}
+
+.list-product__item {
+    margin-top: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.list-product__item-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.list-product__item-text {
+    font-size: 1.4rem;
+    font-family: "Tahoma";
+    text-align: center;
+}
+
+.list-product__item-name {
+    color: #e32b2c;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 5px;
+    line-height: 2.3rem;
+}
+
+.list-product__item-hr {
+    color: #D8D4CE;
+    border-bottom: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+}
+
+.list-product__item-dsc {
+    color: #000;
+    font-size: 1.3rem;
+    color: rgb(51, 51, 51);
+    margin-top: 2px;
+}
+
+.list-product__item-price {
+    color: #F8931E;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 2px;
+}
